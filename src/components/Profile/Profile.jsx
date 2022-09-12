@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
 import Description from './Description/Description';
-import StatsList from './StatsList/StatsList';
+import StatsList from 'components/Profile/StatsList/StatsList';
 
 export default function Profile({ user }) {
   const { username, tag, location, avatar, stats } = user;
   return (
-    <div>
+    <div className="profile">
       <Description
         username={username}
         tag={tag}
