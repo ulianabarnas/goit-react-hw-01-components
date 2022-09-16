@@ -7,12 +7,15 @@ export default function TableBody({ items }) {
     <tbody>
       {items.map((item) => (
         <TableBodyRow key={item.id} item={item} />
-        )
-      )}
+      ))}
     </tbody>
   )
 }
 
 TableBody.propTypes = {
-  items: PropTypes.arrayOf(PropTypes.object),
+    items: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+    })
+  ),
 }

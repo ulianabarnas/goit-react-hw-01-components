@@ -1,15 +1,16 @@
 import StatsItem from '../StatsItem/StatsItem';
 import PropTypes from 'prop-types';
+import { List } from './StatsList.styled';
 
 export default function StatsList({ stats }) {
   const entries = Object.entries(stats);
   return (
-    <ul>
+    <List>
       {entries.map((entry, index) => {
         const [key, value] = entry;
         return <StatsItem key={index} label={key} quantity={value} />;
       })}
-    </ul>
+    </List>
   );
 }
 

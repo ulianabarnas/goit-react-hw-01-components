@@ -1,12 +1,18 @@
 import PropTypes from 'prop-types';
 import StatsList from 'components/Statistics/StatsList/StatsList'
+import Box from 'components/Box/Box';
+import { Title } from './Statistics.styled';
 
 export default function Statistics({ title, stats }) {
   return (
-    <section>
-      {title && (<h2>{title}</h2>)}
+    <Box
+      as="section"
+      pt={5}
+      textAlign="center"
+    >
+      {title && (<Title>{title}</Title>)}
       <StatsList items={stats} />
-    </section>
+    </Box>
   );
 }
 

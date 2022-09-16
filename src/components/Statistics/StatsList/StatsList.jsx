@@ -1,13 +1,19 @@
+import Box from 'components/Box/Box';
 import PropTypes from 'prop-types';
 import StatsItem from '../StatsItem/StatsItem';
 
 export default function StatsList({items}) {
   return (
-    <ul>
+    <Box
+      as="ul"
+      display="flex"
+      borderRadius='normal'
+      overflow='hidden'
+    >
       {items.map(({id, label, percentage}) => {
         return <StatsItem key={id} label={label} percentage={percentage}/>
       })}
-    </ul>
+    </Box>
   )
 }
 

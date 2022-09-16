@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
+import { Item, Label, Quantity } from './StatsItem.styled';
 
 export default function StatsItem({ label, quantity }) {
-  // console.log(stat);
   return (
-    <li>
-      <span className="label">{label}</span>
-      <span className="quantity">{quantity}</span>
-    </li>
+    <Item>
+      <Label>{label}</Label>
+      <Quantity>{quantity}</Quantity>
+    </Item>
   );
 }
 

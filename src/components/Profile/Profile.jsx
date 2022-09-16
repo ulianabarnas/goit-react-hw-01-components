@@ -1,11 +1,17 @@
 import PropTypes from 'prop-types';
 import Description from './Description/Description';
 import StatsList from 'components/Profile/StatsList/StatsList';
+import Box from 'components/Box/Box';
 
 export default function Profile({ user }) {
   const { username, tag, location, avatar, stats } = user;
   return (
-    <div className="profile">
+    <Box
+      maxWidth={300}
+      mx='auto'
+      borderRadius='normal'
+      boxShadow='normal'
+      overflow="hidden">
       <Description
         username={username}
         tag={tag}
@@ -13,7 +19,7 @@ export default function Profile({ user }) {
         avatar={avatar}
       />
       <StatsList stats={stats} />
-    </div>
+    </Box>
   );
 }
 
