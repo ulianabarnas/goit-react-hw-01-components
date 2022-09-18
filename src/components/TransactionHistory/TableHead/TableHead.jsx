@@ -1,20 +1,16 @@
-import Box from 'components/Box/Box';
 import PropTypes from 'prop-types';
+import { TableHeadData, TableHeadRow } from './TableHead.styled';
 
 export default function TableHead({ titles }) {
   return (
-    <Box
-      bg='primary'
-      color='white'
-      textTransform='uppercase'
-    >
-      <tr>
+    <thead>
+      <TableHeadRow>
         {titles.map((title) => (
-          <th key={title}>{title}</th>
+          <TableHeadData key={title}>{title}</TableHeadData>
           )
         )}
-      </tr>
-    </Box>
+      </TableHeadRow>
+    </thead>
   )
 }
 

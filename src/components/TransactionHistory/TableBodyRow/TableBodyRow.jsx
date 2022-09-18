@@ -1,14 +1,15 @@
 import PropTypes from 'prop-types';
+import { Data, Row } from './TableBodyRow.styled';
 
 export default function TableBodyRow({ item }) {
   const values = Object.values(item).slice(1);
 
   return (
-    <tr>
+    <Row>
         {values.map((value, index) => (
-          <td key={item.id + index}>{value}</td>
+          <Data key={item.id + index}>{value}</Data>
         ))}
-    </tr>
+    </Row>
   )
 }
 

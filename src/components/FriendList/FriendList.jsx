@@ -7,6 +7,8 @@ export default function FriendList({friends}) {
     <Box
       as="ul"
       pt={5}
+      maxWidth="300px"
+      mx="auto"
     >
         {friends.map(({avatar, name, isOnline, id}) => {
             return <FriendListItem key={id} avatar={avatar} name={name} isOnline={isOnline} />

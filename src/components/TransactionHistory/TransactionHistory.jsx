@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import TableHead from './TableHead/TableHead';
 import TableBody from './TableBody/TableBody';
-import Box from 'components/Box/Box';
+import {Table} from './TransactionHistory.styled';
 
 
 export default function TransactionHistory({ items }) {
@@ -9,15 +9,10 @@ export default function TransactionHistory({ items }) {
   const tableTitles = Object.keys(items[0]).slice(1);
 
   return (
-    <Box
-      mt={5}
-      boxShadow='normal'
-      borderRadius='normal'
-      overflow='hidden'
-    >
+    <Table>
       <TableHead titles={tableTitles} />
       <TableBody items={items} />
-    </Box>
+    </Table>
   )
 }
 

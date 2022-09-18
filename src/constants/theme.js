@@ -4,11 +4,11 @@ export const theme = {
     white: '#fff',
     text: '#2a2a2a',
     background: '#fff',
-    primary: '#07c',
+    primary: '#538bb4',
     secondary: '#aaa',
+    muted: '#f6f6f6',
     online: '#11b61c',
     offline: '#ff5f1b',
-    muted: '#f6f6f6',
   },
   space: [0, 2, 4, 8, 16, 32, 64, 128, 256],
   fonts: {

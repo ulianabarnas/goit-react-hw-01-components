@@ -9,6 +9,7 @@ export default function StatsList({items}) {
       display="flex"
       borderRadius='normal'
       overflow='hidden'
+      boxShadow='normal'
     >
       {items.map(({id, label, percentage}) => {
         return <StatsItem key={id} label={label} percentage={percentage}/>

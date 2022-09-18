@@ -1,7 +1,7 @@
-import user from '../../data/user.json'
-import data from '../../data/data.json'
-import friends from '../../data/friends.json'
-import transactions from '../../data/transactions.json'
+import user from 'data/user.json'
+import data from 'data/data.json'
+import friends from 'data/friends.json'
+import transactions from 'data/transactions.json'
 
 import Profile from 'components/Profile/Profile';
 import Statistics from 'components/Statistics/Statistics'
@@ -12,7 +12,7 @@ import Box from 'components/Box/Box';
 export const App = () => {
   return (
     <Box
-      width="80%"
+      width="70%"
       mx="auto"
       py={5}
       color='black'
